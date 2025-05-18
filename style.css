@@ -52,6 +52,21 @@ body {
 .nav-links li a:hover {
   color: cyan;
 }
+/* Responsive background video */
+@media (max-aspect-ratio: 16/9) {
+  .back-vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-vid {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 /* Sections */
 section {
@@ -81,7 +96,7 @@ section {
   background-color: #2200493d;
   box-shadow: 0 0 5px #727fde88;
   border-radius: 50px;
-  text-align: center; 
+  text-align: center; /* Ensures title text is centered inside the pill */
 }
 
 .hero-info h1 {
@@ -131,17 +146,12 @@ section {
   }
 }
 
-/* Responsive background video */
-@media (max-aspect-ratio: 16/9) {
-  .back-vid {
-    width: 100%;
-    height: auto;
-  }
+
+.hero-vid-box {
+    position: absolute;
+    right: 3%;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .back-vid {
-    width: 100%;
-    height: auto;
-  }
+.hero-vid-box video {
+    height: 800px;
 }
