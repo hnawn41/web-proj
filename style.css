@@ -106,11 +106,11 @@ section {
 /* Gradient text */
 /* Replace your current .gradient-text rule with this: */
 .gradient-text {
-  background: linear-gradient(90deg, #ff4b2b, #ec38bc, #ff4b2b);
+  background: linear-gradient(90deg, #ff4b2b, #d527de, #ff4b2b);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 3s ease-in-out infinite;
+  animation: shine 8s ease-in-out infinite;
   font-weight: 600;
   font-size: clamp(1.5rem, 6vw, 6rem) !important; /* Force override */
   display: inline-block; /* Needed for gradient */
