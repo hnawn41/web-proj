@@ -81,21 +81,30 @@ section {
 
 .hero-content p:nth-child(1) {
   transform: translateX(00px);
+  letter-spacing: -6px;
+  font-weight: 400;
 }
 
 .hero-content p:nth-child(2) {
   transform: translateX(00px);
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .hero-content p:nth-child(3) {
-  transform: translateX(65px);
+  transform: translateX(75px);
+    font-weight: 500;
+    
 }
 
 .hero-content p:nth-child(4) {
   transform: translateX(00px);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 7vw, 7rem) !important;
 }
 
 /* Gradient text */
+/* Replace your current .gradient-text rule with this: */
 .gradient-text {
   background: linear-gradient(90deg, #ff4b2b, #ec38bc, #ff4b2b);
   background-size: 200% auto;
@@ -103,6 +112,34 @@ section {
   -webkit-text-fill-color: transparent;
   animation: shine 3s ease-in-out infinite;
   font-weight: 600;
+  font-size: clamp(1.5rem, 6vw, 6rem) !important; /* Force override */
+  display: inline-block; /* Needed for gradient */
+  line-height: 1; /* Prevent spacing issues */
+}
+
+/* Add this new rule to ensure it stays smaller: */
+.hero-content p.gradient-text {
+  font-size: clamp(1.5rem, 7vw, 7rem) !important;
+}
+/* Individual 'i' weights */
+/* Tight spacing between "I"s and decreasing weights */
+.i {
+  display: inline-block;
+  font-style: thin;
+  margin: 0 -0.153em; /* Negative margin to tighten spacing */
+}
+
+.i1 { font-weight: 400; }
+.i2 { font-weight: 350; }
+.i3 { font-weight: 300; }
+.i4 { font-weight: 250; }
+.i5 { font-weight: 200; }
+.i6 { font-weight: 150; }
+.i7 { font-weight: 100; }
+.i8 { font-weight: 100; }
+
+.hero-content p {
+  letter-spacing: -6px; /* Default was 1px */
 }
 
 @keyframes shine {
