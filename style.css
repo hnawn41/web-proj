@@ -43,8 +43,8 @@ body {
 .nav-links li a {
   text-decoration: none;
   color: rgb(237, 237, 237);
-  font-weight: 5; 
-  font-size: 0.6rem;
+  font-weight: 350;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   transition: color 0.3 ease;
 }
@@ -61,24 +61,54 @@ section {
   color: white;
 }
 
-
-.intro {
-  min-height: 100vh;
+.hero {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  padding: 140px ; /* Space from top and sides */
-  gap: 10px; /* Space between lines */
+  align-items: center;
+  justify-content: center;
+  height: 130vh; /* maybe it will be changed later*/
+  position: relative;
+  text-align: center;
+  padding: 0 5vw;
 }
 
-/* Intro text style */
-.intro-text {
-  color: white;
-  font-size: 4rem;
-  font-weight: 550;
-  letter-spacing: 2px;
+.hero-content p {
   margin: 0;
-  text-transform: uppercase;
+  font-size: clamp(2rem, 8vw, 8rem);
+  font-weight: 500; 
+  line-height: 1.0;
+  letter-spacing: 1px;
+}
+
+.hero-content p:nth-child(1) {
+  transform: translateX(00px);
+}
+
+.hero-content p:nth-child(2) {
+  transform: translateX(00px);
+}
+
+.hero-content p:nth-child(3) {
+  transform: translateX(65px);
+}
+
+.hero-content p:nth-child(4) {
+  transform: translateX(00px);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #ff4b2b, #ec38bc, #ff4b2b);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s ease-in-out infinite;
+  font-weight: 600;
+}
+
+@keyframes shine {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
 }
 
 
