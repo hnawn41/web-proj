@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Rayane - Front-end Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -18,13 +18,15 @@
     <nav>
       <ul class="nav-links">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contacts">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id = "about" class="hero">
+  <!-- About/Hero Section -->
+  <section id="about" class="hero">
     <div class="hero-info">
       <div class="hero-info-title-wrapper">
         <div class="hero-info-title">
@@ -50,8 +52,113 @@
     </div>
   </section>
 
-  <section id="gallery"></section>
-  <section id="contacts"></section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h1 class="skills-section-title">
+      My Skills 💪
+    </h1>
+    <div class="skills-box">
+      <img src="images/digital brain.png" alt="skills-image" class="skills-image">
+      <div class="designer">
+        <h1 class="gradient">Designer <i class="fa-solid fa-laptop"></i></h1>
+        <p>My design process blends aesthetic elegance with functional clarity, specializing in Figma and Adobe XD to craft wireframes, prototypes, and design systems that solve real user problems while delighting the senses.</p>
+      </div>
+      <div class="coder">
+        <h1 class="gradient">Coder <i class="fa-solid fa-code"></i></h1>
+        <p>Proficient in front-end development (HTML, CSS, JavaScript) and frameworks like React. Experienced with databases (SQL, Firebase) and turning designs into fully functional, responsive websites.</p>
+      </div>
+      <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 8;">
+        <div class="list">
+          <div class="item" style="--position: 1"><img src="images/1 (1).png" alt="slider-image"></div>
+          <div class="item" style="--position: 2"><img src="images/2.png" alt="slider-image"></div>
+          <div class="item" style="--position: 3"><img src="images/3.png" alt="slider-image"></div>
+          <div class="item" style="--position: 4"><img src="images/4.png" alt="slider-image"></div>
+          <div class="item" style="--position: 5"><img src="images/5.png" alt="slider-image"></div>
+          <div class="item" style="--position: 6"><img src="images/6.png" alt="slider-image"></div>
+          <div class="item" style="--position: 7"><img src="images/7.png" alt="slider-image"></div>
+          <div class="item" style="--position: 8"><img src="images/8.png" alt="slider-image"></div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h1 class="section-title">My Projects 💻</h1>
+    
+    <div class="project-card">
+      <div class="project-vidbox">
+        <video id="projectvde1" src="videos/project1.mp4" autoplay loop muted></video>
+      </div>
+      <div class="project-info">
+        <h1>Animated <span class="gradient">Gaming</span> Design</h1>
+        <p>
+          My work blends creativity, storytelling, and captivating 
+          gameplay to deliver unique adventures for players,
+          specialized in designing immersive worlds 
+          and innovative gaming experiences.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-vidbox">
+        <video id="projectvde2" src="videos/project2.mp4" autoplay loop muted></video>
+      </div>
+      <div class="project-info">
+        <h1><span class="gradient">3D</span> Website</h1>
+        <p>My talent transforms ideas into captivating and dynamic visual experiences, combining modern technologies like Three.js with fluid and aesthetic design.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-vidbox">
+        <img src="images/img33.jpg" alt="Mobile Design Project">
+      </div>
+      <div class="project-info">
+        <h1>Mobile <span class="gradient">Design</span></h1>
+        <p>My talent crafts intuitive and visually stunning mobile experiences, transforming ideas into seamless, user-centric designs. By blending modern tools like Figma and SwiftUI with elegant, responsive aesthetics, I create apps that captivate and engage users effortlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacts" class="contact-section">
+    <h1 class="section-title">Let's create something amazing<br>Get in touch!</h1>
+
+    <div class="social-box">
+      <a href="#"><i class="fa-solid fa-phone-volume"></i>+213 55 55 55 55</a>
+      <a href="#"><i class="fa-brands fa-square-whatsapp"></i>Whatsapp Business</a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i>My Linkedin</a>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <q>Whether you're looking for intuitive wireframes, eye-catching prototypes, seamless user flows or full-scale UI/UX design, I'm here to help bring your vision to life. Let's connect and create something amazing together!</q>
+      
+      <p>Full Name</p>
+      <input type="text" placeholder="Your Full Name">
+
+      <p>Email Address</p>
+      <input type="email" placeholder="Your Email">
+
+      <p>Topic</p>
+      <input type="text" placeholder="Your Topic">
+
+      <p>Message</p>
+      <textarea placeholder="Share Your Ideas..."></textarea>
+
+      <button><i class="fa-solid fa-share-from-square"></i> Send Message</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
 </body>
 </html>
